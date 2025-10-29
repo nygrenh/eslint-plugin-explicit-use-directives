@@ -1,0 +1,72 @@
+{
+  "name": "eslint-plugin-explicit-use-directives",
+  "version": "0.0.0-alpha.0",
+  "description": "ESLint plugin to enforce explicit 'use' directives like \"use client\" at the top of JSX and TSX files.",
+  "author": "Henrik Nygren <nygrenh@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/nygrenh/eslint-plugin-explicit-use-directives",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "pnpm run build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "eslint-rule",
+    "use directive",
+    "use client",
+    "use server",
+    "use",
+    "directive prologue",
+    "react",
+    "nextjs",
+    "tsx",
+    "jsx",
+    "frontend",
+    "autofix",
+    "linter",
+    "code-style",
+    "explicit use directives",
+    "eslint custom rule"
+  ],
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "packageManager": "pnpm@10.19.0",
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@eslint/json": "^0.13.2",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^24.9.1",
+    "@typescript-eslint/parser": "^8.46.2",
+    "@vitest/coverage-v8": "^4.0.4",
+    "@vitest/eslint-plugin": "^1.3.26",
+    "eslint": "^9.38.0",
+    "eslint-plugin-eslint-plugin": "^7.2.0",
+    "eslint-plugin-n": "^17.23.1",
+    "globals": "^16.4.0",
+    "jiti": "^2.6.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2",
+    "vitest": "^4.0.4"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  }
+}
