@@ -1,10 +1,13 @@
 {
   "name": "eslint-plugin-explicit-use-directives",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "ESLint plugin to enforce explicit 'use' directives like \"use client\" at the top of JSX and TSX files.",
   "author": "Henrik Nygren <nygrenh@gmail.com>",
   "license": "Apache-2.0",
-  "repository": "https://github.com/nygrenh/eslint-plugin-explicit-use-directives",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nygrenh/eslint-plugin-explicit-use-directives.git"
+  },
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
